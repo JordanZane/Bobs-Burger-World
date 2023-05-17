@@ -124,3 +124,20 @@ body {
   a {
   }
 }
+
+.subtitle-container {
+  text-align: center;
+  p.subtitle {
+    font-weight: bold;
+    font-size: 20px;
+
+    display: inline-block;
+  }
+}
+
+.container {
+  max-width: 1350px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0px);
+}

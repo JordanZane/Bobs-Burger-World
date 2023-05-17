@@ -1,0 +1,43 @@
+.btns-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 185px 50px 0 50px;
+  .btn {
+    font-family: $font1;
+    font-size: 38px;
+    color: $color-red;
+    border: 3px solid $color-red;
+    padding: 13px 26px;
+    text-decoration: none;
+    position: relative;
+    @include transition(0.5s);
+    &:hover {
+      background-color: $color-red;
+      color: $color-yellow;
+    }
+  }
+  .btn.episodes {
+    &::after {
+      content: '';
+      position: absolute;
+      left: 40%;
+      transform: translate(-50%, 0);
+      top: -205px;
+      width: 195px;
+      height: 195px;
+      background-image: url('../../../assets/images/arrow-right.svg');
+    }
+  }
+  .btn.characters {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 60%;
+      top: -205px;
+      transform: translate(-50%, 0);
+      width: 195px;
+      height: 195px;
+      background-image: url('../../../assets/images/arrow-left.svg');
+    }
+  }
+}

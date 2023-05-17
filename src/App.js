@@ -1,16 +1,19 @@
-import logoImg from './assets/images/logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './components/Pages/Home';
+import Characters from './components/Pages/Characters';
+import Episodes from './components/Pages/Episodes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logoImg} alt="Bob's Burger World" />
-        <h1>Bob's Burger World</h1>
-        <p>
-          Bob's Burgers is an American animated sitcom created by Loren Bouchard
-        </p>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/characters" element={<Characters />}></Route>
+        <Route path="/episodes" element={<Episodes />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
