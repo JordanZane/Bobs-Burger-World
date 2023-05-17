@@ -11,10 +11,10 @@ const rotate = keyframes`
 `;
 
 const LoaderContent = styled.div`
-  padding: 10px;
+  padding: 30px;
   border: 6px solid red;
   border-bottom-color: transparent;
-  border-radius: 22px;
+  border-radius: 50%;
   animation: ${rotate} 1s infinite linear;
   height: 0;
   width: 0;
@@ -23,7 +23,7 @@ const LoaderContent = styled.div`
 function Loader() {
   return (
     <div>
-      <h1>loading</h1>
+      <h2>loading Cards</h2>
       <LoaderContent />
     </div>
   );

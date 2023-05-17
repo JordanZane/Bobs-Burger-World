@@ -1,19 +1,17 @@
 .characters-page {
-  .sort-btns-container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-
-    button {
-      font-family: $font1;
-      color: $color-red;
-      background: unset;
-      border: unset;
-      font-size: 24px;
-      cursor: pointer;
-      margin: 10px;
-    }
+  h2 {
+    font-family: $font1;
   }
+  button {
+    font-family: $font1;
+    color: $color-red;
+    background: unset;
+    border: unset;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 10px;
+  }
+
   .cards-container {
     li {
       width: 15%;

@@ -17,6 +17,14 @@ const CardsContainer = styled.div`
   justify-content: center;
 `;
 
+const BtnSortContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  position: relative;
+`;
+
+const CharacterMain = styled.div``;
+
 const Characters = () => {
   const [isDataLoading, setDataLoading] = useState(false);
   const [data, setData] = useState([]);
@@ -49,20 +57,22 @@ const Characters = () => {
 
   return (
     <main className="container characters-page">
-      <ul className="sort-btns-container">
-        <button onClick={SortAToZ}>A to Z</button>
-        <button onClick={SortZToA}>Z to A</button>
-      </ul>
       {isDataLoading ? (
         <LoaderContainer>
           <Loader />
         </LoaderContainer>
       ) : (
-        <CardsContainer className="cards-container">
-          {data.map((character, index) => (
-            <CharactersCards key={index} character={character} />
-          ))}
-        </CardsContainer>
+        <CharacterMain>
+          <BtnSortContainer>
+            <button onClick={SortAToZ}>A to Z</button>
+            <button onClick={SortZToA}>Z to A</button>
+          </BtnSortContainer>
+          <CardsContainer className="cards-container">
+            {data.map((character, index) => (
+              <CharactersCards key={index} character={character} />
+            ))}
+          </CardsContainer>
+        </CharacterMain>
       )}
     </main>
   );
