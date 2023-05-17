@@ -8,8 +8,12 @@ const CharactersCards = ({ character }) => {
       </div>
       <div className="infos">
         <h3>{character.name}</h3>
-        <p>{character.occupation}</p>
-        <p>Age : {character.age}</p>
+        {character.occupation ? (
+          <p>occupation : {character.occupation}</p>
+        ) : (
+          <p>No occupation finds</p>
+        )}
+
         <a
           className="btn"
           href={character.wikiUrl}

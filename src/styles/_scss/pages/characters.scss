@@ -2,6 +2,8 @@
   .sort-btns-container {
     display: flex;
     justify-content: center;
+    position: relative;
+
     button {
       font-family: $font1;
       color: $color-red;
@@ -13,9 +15,6 @@
     }
   }
   .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     li {
       width: 15%;
       text-align: center;
