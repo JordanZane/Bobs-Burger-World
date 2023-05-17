@@ -1,4 +1,17 @@
 .characters-page {
+  .sort-btns-container {
+    display: flex;
+    justify-content: center;
+    button {
+      font-family: $font1;
+      color: $color-red;
+      background: unset;
+      border: unset;
+      font-size: 24px;
+      cursor: pointer;
+      margin: 10px;
+    }
+  }
   .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -13,7 +26,9 @@
         display: flex;
         padding: 0 10px 10px 10px;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
+        height: 285px;
 
         h3 {
           font-size: 20px;
