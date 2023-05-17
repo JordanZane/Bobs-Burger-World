@@ -15,6 +15,7 @@ function App() {
         <Route path="/characters" element={<Characters />}></Route>
         <Route path="/episodes" element={<Episodes />}></Route>
         <Route path="/burgers" element={<Burger />}></Route>
+        <Route path="/*" element={<Home />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
