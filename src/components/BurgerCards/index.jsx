@@ -9,7 +9,7 @@ const BurgerCards = ({ burgers }) => {
       </div>
       <div className="infos-container">
         <h3>{burgers.name}</h3>
-        <p>price : {burgers.price}</p>
+        <p>Price : {burgers.price}</p>
       </div>
     </li>
   );

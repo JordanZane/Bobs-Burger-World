@@ -7,8 +7,8 @@ const Home = () => {
         <p className="subtitle">
           Bob's Burgers is an American animated sitcom created by Loren Bouchard
           <br />
-          This site regroup all the informations about the characters and the
-          episodes
+          This site regroup all the informations about the characters, burgers
+          and the episodes
         </p>
         <div className="btns-container">
           <Link className="btn characters" to="/characters">
