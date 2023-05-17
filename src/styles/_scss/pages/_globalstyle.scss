@@ -30,10 +30,9 @@ body {
     font-weight: 700;
     font-size: 80px;
     line-height: 52px;
-    position: relative;
     margin: 0;
     color: $color-red;
-    top: -65px;
+
     @include respond-to('medium') {
       font-size: 30px;
     }
