@@ -118,13 +118,6 @@ body {
   }
 }
 
-.button_back {
-  margin-top: 40px;
-  text-align: center;
-  a {
-  }
-}
-
 .subtitle-container {
   text-align: center;
   p.subtitle {
@@ -139,4 +132,19 @@ body {
   max-width: 1350px;
   position: relative;
   margin: auto;
+}
+
+.btn {
+  font-family: $font1;
+  font-size: 38px;
+  color: $color-red;
+  border: 3px solid $color-red;
+  padding: 13px 26px;
+  text-decoration: none;
+  position: relative;
+  @include transition(0.5s);
+  &:hover {
+    background-color: $color-red;
+    color: $color-yellow;
+  }
 }

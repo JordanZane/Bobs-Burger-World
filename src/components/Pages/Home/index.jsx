@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const Home = () => {
   return (
-    <main className="container">
+    <main className="container home-page">
       <div className="subtitle-container">
         <p className="subtitle">
           Bob's Burgers is an American animated sitcom created by Loren Bouchard
