@@ -22,9 +22,9 @@
       position: absolute;
       left: 40%;
       transform: translate(-50%, 0);
-      top: -205px;
-      width: 195px;
-      height: 195px;
+      top: -150px;
+      width: 100px;
+      height: 100px;
       background-image: url('../../../assets/images/arrow-right.svg');
     }
   }
@@ -33,11 +33,12 @@
       content: '';
       position: absolute;
       left: 60%;
-      top: -205px;
+      top: -150px;
       transform: translate(-50%, 0);
-      width: 195px;
-      height: 195px;
+      width: 100px;
+      height: 100px;
       background-image: url('../../../assets/images/arrow-left.svg');
+      background-repeat: no-repeat;
     }
   }
 }
