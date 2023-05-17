@@ -1,12 +1,14 @@
 header {
+  .top-page {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
   .header-infos {
     text-align: center;
   }
   nav {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 30px;
-    a {
+    .nav-link {
       font-size: 18px;
       font-weight: bold;
       color: $color-red;
