@@ -11,7 +11,7 @@ const LoaderContainer = styled.div`
   text-align: center;
 `;
 
-const CardsContainer = styled.div`
+const CardsContainer = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -63,6 +63,7 @@ const Characters = () => {
         </LoaderContainer>
       ) : (
         <CharacterMain>
+          <h2>Characters</h2>
           <BtnSortContainer>
             <button onClick={SortAToZ}>A to Z</button>
             <button onClick={SortZToA}>Z to A</button>
