@@ -1,0 +1,27 @@
+.burgers-page {
+  h2 {
+    text-align: center;
+  }
+  ul {
+    li {
+      width: 20%;
+      list-style-type: none;
+      margin: 15px;
+      padding: 10px;
+      background-color: $color-white;
+      text-align: center;
+      border: 1px solid $color-red;
+      box-shadow: 0px 0px 3px 1px $color-red;
+      .img-container {
+        img {
+          max-width: 100%;
+        }
+      }
+      .infos-container {
+        h3 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

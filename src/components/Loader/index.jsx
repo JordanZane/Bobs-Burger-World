@@ -18,12 +18,16 @@ const LoaderContent = styled.div`
   animation: ${rotate} 1s infinite linear;
   height: 0;
   width: 0;
+  position: absolute;
+  left: 47%;
+  top: 80%;
+  transform: translate(-47%, -80%);
 `;
 
 function Loader() {
   return (
     <div>
-      <h2>loading Cards</h2>
+      <h2>LOADING...</h2>
       <LoaderContent />
     </div>
   );
