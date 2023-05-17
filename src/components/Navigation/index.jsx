@@ -3,14 +3,17 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
-    <div className="btns-container">
-      <Link className="btn characters" to="/characters">
+    <nav>
+      <Link className="nav-link" to="/">
+        Home
+      </Link>
+      <Link className="nav-link" to="/characters">
         Characters
       </Link>
-      <Link className="btn episodes" to="/episodes">
+      <Link className="nav-link" to="/episodes">
         Episodes
       </Link>
-    </div>
+    </nav>
   );
 };
 

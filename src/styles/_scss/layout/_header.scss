@@ -1,3 +1,16 @@
 header {
-  text-align: center;
+  .header-infos {
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    .nav-link {
+      font-size: 18px;
+      font-weight: bold;
+      color: $color-red;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+  }
 }

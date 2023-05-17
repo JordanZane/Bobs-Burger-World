@@ -1,13 +1,23 @@
 import React from 'react';
-import Navigation from '../../Navigation';
+import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <main className="container">
       <div className="subtitle-container">
         <p className="subtitle">
           Bob's Burgers is an American animated sitcom created by Loren Bouchard
+          <br />
+          This site regroup all the informations about the characters and the
+          episodes
         </p>
-        <Navigation />
+        <div className="btns-container">
+          <Link className="btn characters" to="/characters">
+            Characters
+          </Link>
+          <Link className="btn episodes" to="/episodes">
+            Episodes
+          </Link>
+        </div>
       </div>
     </main>
   );

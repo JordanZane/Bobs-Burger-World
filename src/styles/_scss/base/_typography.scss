@@ -1,5 +1,5 @@
 $font1: "Bob's Burger", sans-serif;
-$font2: 'Montserrat', sans-serif;
+$font2: 'Roboto', sans-serif;
 
 @font-face {
   font-family: "Bob's Burger";
@@ -7,20 +7,30 @@ $font2: 'Montserrat', sans-serif;
   src: url('../../../assets/fonts/bobs_burgers.eot') format('embedded-opentype'),
     url('../../../assets/fonts/bobs_burgers.woff') format('woff'),
     url('../../../assets/fonts/bobs_burgers.ttf') format('truetype'),
-    url('../../../assets/fonts/bobs_burgers.svg#philosopher-regular')
-      format('svg');
+    url('../../../assets/fonts/bobs_burgers.svg#bobs_burgers') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../../../assets/fonts/montserrat.eot') format('eot');
-  src: url('../../../assets/fonts/bobs_burgers.eot') format('embedded-opentype'),
-    url('../../../assets/fonts/montserrat.woff') format('woff'),
-    url('../../../assets/fonts/montserrat.ttf') format('truetype'),
-    url('../../../assets/fonts/montserrat.svg#philosopher-regular')
-      format('svg');
+  font-family: 'Roboto';
+  src: url('../../../assets/fonts/roboto-regular.eot') format('eot');
+  src: url('../../../assets/fonts/roboto-regular.eot')
+      format('embedded-opentype'),
+    url('../../../assets/fonts/roboto-regular.woff') format('woff'),
+    url('../../../assets/fonts/roboto-regular.ttf') format('truetype'),
+    url('../../../assets/fonts/roboto-regular.svg#roboto-regular') format('svg');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../../assets/fonts/roboto-bold.eot') format('eot');
+  src: url('../../../assets/fonts/roboto-bold.eot') format('embedded-opentype'),
+    url('../../../assets/fonts/roboto-bold.woff') format('woff'),
+    url('../../../assets/fonts/roboto-bold.ttf') format('truetype'),
+    url('../../../assets/fonts/roboto-bold.svg#roboto-bold') format('svg');
+  font-weight: bold;
   font-style: normal;
 }

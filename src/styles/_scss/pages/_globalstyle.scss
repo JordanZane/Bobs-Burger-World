@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: $font2;
   color: $color-grey;
   font-size: 14px;
   letter-spacing: 1px;
@@ -130,7 +130,7 @@ body {
   p.subtitle {
     font-weight: bold;
     font-size: 20px;
-
+    line-height: 26px;
     display: inline-block;
   }
 }
@@ -138,6 +138,5 @@ body {
 .container {
   max-width: 1350px;
   position: relative;
-  left: 50%;
-  transform: translate(-50%, 0px);
+  margin: auto;
 }
