@@ -31,6 +31,15 @@ const Navigation = () => {
           className={(nav) =>
             nav.isActive ? 'nav-active nav-link' : 'nav-link'
           }
+          to="/burgers"
+        >
+          Burgers
+        </NavLink>
+
+        <NavLink
+          className={(nav) =>
+            nav.isActive ? 'nav-active nav-link' : 'nav-link'
+          }
           to="/episodes"
         >
           Episodes

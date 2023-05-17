@@ -14,6 +14,9 @@ const Home = () => {
           <Link className="btn characters" to="/characters">
             Characters
           </Link>
+          <Link className="btn burgers" to="/burgers">
+            Burgers
+          </Link>
           <Link className="btn episodes" to="/episodes">
             Episodes
           </Link>

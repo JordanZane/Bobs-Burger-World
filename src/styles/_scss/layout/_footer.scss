@@ -3,5 +3,14 @@ footer {
   padding: 50px 0;
   p {
     font-style: italic;
+    a {
+      color: $color-red;
+      text-decoration: unset;
+
+      &:hover {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
   }
 }

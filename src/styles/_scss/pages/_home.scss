@@ -29,5 +29,56 @@
         background-repeat: no-repeat;
       }
     }
+
+    .btn.burgers {
+      &::before {
+        content: '';
+        position: absolute;
+        left: -31px;
+        z-index: -1;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 30px;
+        height: 48px;
+        background-image: url('../../../assets/images/chac-1.svg');
+        background-repeat: no-repeat;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        right: 10px;
+        z-index: -1;
+        top: -48px;
+        width: 30px;
+        height: 48px;
+        background-image: url('../../../assets/images/chac-2.svg');
+        background-repeat: no-repeat;
+      }
+      &:hover {
+        &::before {
+          content: '';
+          position: absolute;
+          left: -31px;
+          z-index: -1;
+          top: 50%;
+          transform: translate(0, -50%);
+          width: 30px;
+          height: 48px;
+          background-image: url('../../../assets/images/chac-1-active.svg');
+          background-repeat: no-repeat;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          right: 10px;
+          z-index: -1;
+          top: -45px;
+          width: 30px;
+          height: 48px;
+          background-image: url('../../../assets/images/chac-2-active.svg');
+          background-repeat: no-repeat;
+        }
+      }
+    }
   }
 }
