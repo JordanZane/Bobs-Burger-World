@@ -17,12 +17,19 @@
   ul.episodes-container {
     display: flex;
     flex-direction: column;
+    padding: 0px 36px;
     li {
       display: flex;
       align-items: center;
       border: 1px solid $color-red;
-      padding-left: 15px;
       justify-content: space-between;
+      @include respond-to('medium') {
+        text-align: center;
+      }
+      @include respond-to('small') {
+        flex-direction: column;
+        padding: 15px;
+      }
       h3 {
         font-size: 16px;
         margin: 0;
@@ -30,6 +37,9 @@
       p {
         margin: 0 20px;
         font-weight: bold;
+        @include respond-to('small') {
+          margin-bottom: 10px;
+        }
       }
     }
   }
