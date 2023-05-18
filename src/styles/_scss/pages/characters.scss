@@ -17,12 +17,24 @@
   }
 
   .cards-container {
+    padding-left: 0;
+    @include respond-to('medium') {
+    }
     li {
       width: 15%;
       text-align: center;
       list-style-type: none;
       margin: 15px;
       border: 1px solid $color-red;
+      @include respond-to('medium') {
+        width: 20%;
+      }
+      @include respond-to('small') {
+        width: 40%;
+      }
+      @include respond-to('xsmall') {
+        width: 60%;
+      }
       .infos {
         display: flex;
         padding: 0 10px 10px 10px;
