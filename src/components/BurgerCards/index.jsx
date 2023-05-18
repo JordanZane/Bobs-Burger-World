@@ -3,7 +3,7 @@ import burgerImg from '../../assets/images/burger.svg';
 
 const BurgerCards = ({ burgers }) => {
   return (
-    <li>
+    <li className="reveal">
       <div className="img-container">
         <img src={burgerImg} alt={burgers.name} />
       </div>

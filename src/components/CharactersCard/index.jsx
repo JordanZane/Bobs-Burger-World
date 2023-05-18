@@ -2,7 +2,7 @@ import React from 'react';
 
 const CharactersCards = ({ character }) => {
   return (
-    <li>
+    <li className="reveal">
       <div className="img-container">
         <img src={character.image} alt={character.name} />
       </div>

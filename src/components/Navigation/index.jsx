@@ -4,7 +4,7 @@ import logoImgSmall from '../../assets/images/logo-small.svg';
 
 const Navigation = () => {
   return (
-    <div className="top-page">
+    <div id="top-page" className="top-page">
       <div className="logo-container">
         <NavLink to="/">
           <img src={logoImgSmall} alt="Bob's Burger World" />

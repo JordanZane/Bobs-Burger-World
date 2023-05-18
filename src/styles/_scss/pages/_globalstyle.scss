@@ -1,14 +1,5 @@
-.error-404 {
-  padding: 70px 0 70px;
-  p {
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 49px;
-
-    a {
-      color: cadetblue;
-    }
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -17,6 +8,7 @@ body {
   font-size: 14px;
   letter-spacing: 1px;
   background-color: $color-yellow;
+
   @include respond-to('small') {
     font-size: 16px;
   }
@@ -140,5 +132,31 @@ body {
   &:hover {
     background-color: $color-red;
     color: $color-yellow;
+  }
+}
+
+.top-page-link-container {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+  i {
+    font-size: 32px;
+    color: $color-red;
+    @include transition(0.3s);
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+  &.active {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

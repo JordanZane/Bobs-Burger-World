@@ -2,7 +2,7 @@ import React from 'react';
 
 const EpisodesList = ({ episode }) => {
   return (
-    <li>
+    <li className="reveal">
       <p>Episode N° {episode.id}</p>
       <h3>Name : {episode.name}</h3>
       <p>Date : {episode.airDate}</p>
