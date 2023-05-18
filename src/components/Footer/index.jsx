@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <footer>
       <p>
-        Bob's Burger World - Copyright Zanetti Jordan - 2023 -
+        Bob's Burger World - Copyright 2023 - Zanetti Jordan -
         <a href="https://jordanzanetti.fr" target="_blank" rel="noreferrer">
-          Visiter mon site
+          Visits my website
         </a>
       </p>
     </footer>
