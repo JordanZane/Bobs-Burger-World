@@ -1,0 +1,36 @@
+.episodes-page {
+  h2 {
+    text-align: center;
+  }
+  nav {
+    text-align: center;
+    select {
+      background: $color-red;
+      color: $color-yellow;
+      font-family: $font1;
+      font-size: 32px;
+      border: unset;
+      padding: 8px;
+      cursor: pointer;
+    }
+  }
+  ul.episodes-container {
+    display: flex;
+    flex-direction: column;
+    li {
+      display: flex;
+      align-items: center;
+      border: 1px solid $color-red;
+      padding-left: 15px;
+      justify-content: space-between;
+      h3 {
+        font-size: 16px;
+        margin: 0;
+      }
+      p {
+        margin: 0 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}
