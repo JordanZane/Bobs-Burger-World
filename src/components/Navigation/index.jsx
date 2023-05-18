@@ -2,6 +2,11 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logoImgSmall from '../../assets/images/logo-small.svg';
 
+function ShowSmNav() {
+  const subnav = document.getElementById('subnav');
+  subnav.classList.toggle('active');
+}
+
 const Navigation = () => {
   return (
     <div id="top-page" className="top-page">
@@ -48,8 +53,8 @@ const Navigation = () => {
       <nav className="nav-sm">
         <ul>
           <li>
-            déroulant
-            <ul>
+            <i onClick={ShowSmNav} className="fa-solid fa-bars"></i>
+            <ul id="subnav" className="subnav">
               <li>
                 <NavLink
                   className={(nav) =>
