@@ -26,10 +26,10 @@ body {
     color: $color-red;
 
     @include respond-to('medium') {
-      font-size: 30px;
+      font-size: 56px;
     }
     @include respond-to('small') {
-      font-size: 25px;
+      font-size: 46px;
     }
   }
 
@@ -140,6 +140,7 @@ body {
   right: 20px;
   top: 50%;
   transform: translate(0, -50%);
+  z-index: 1;
   i {
     font-size: 32px;
     color: $color-red;

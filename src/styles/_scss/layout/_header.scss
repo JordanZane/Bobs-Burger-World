@@ -7,7 +7,10 @@ header {
   .header-infos {
     text-align: center;
   }
-  nav {
+  nav.nav-dk {
+    @include respond-to('small') {
+      display: none;
+    }
     .nav-link {
       font-size: 18px;
       font-weight: bold;
@@ -29,6 +32,12 @@ header {
       height: 2px;
       background-color: $color-red;
       animation: growHor 0.3s linear forwards;
+    }
+  }
+  nav.nav-sm {
+    display: none;
+    @include respond-to('small') {
+      display: block;
     }
   }
 }

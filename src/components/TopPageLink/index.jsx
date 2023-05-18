@@ -4,7 +4,7 @@ const TopPageLink = () => {
   return (
     <div className="top-page-link-container">
       <a href="#top-page">
-        <i class="fa-solid fa-arrow-up"></i>
+        <i className="fa-solid fa-arrow-up"></i>
       </a>
     </div>
   );

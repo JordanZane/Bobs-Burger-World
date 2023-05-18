@@ -10,7 +10,7 @@ const Navigation = () => {
           <img src={logoImgSmall} alt="Bob's Burger World" />
         </NavLink>
       </div>
-      <nav>
+      <nav className="nav-dk">
         <NavLink
           className={(nav) =>
             nav.isActive ? 'nav-active nav-link' : 'nav-link'
@@ -44,6 +44,55 @@ const Navigation = () => {
         >
           Episodes
         </NavLink>
+      </nav>
+      <nav className="nav-sm">
+        <ul>
+          <li>
+            déroulant
+            <ul>
+              <li>
+                <NavLink
+                  className={(nav) =>
+                    nav.isActive ? 'nav-active nav-link' : 'nav-link'
+                  }
+                  to="/home"
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className={(nav) =>
+                    nav.isActive ? 'nav-active nav-link' : 'nav-link'
+                  }
+                  to="/characters"
+                >
+                  Characters
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className={(nav) =>
+                    nav.isActive ? 'nav-active nav-link' : 'nav-link'
+                  }
+                  to="/burgers"
+                >
+                  Burgers
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className={(nav) =>
+                    nav.isActive ? 'nav-active nav-link' : 'nav-link'
+                  }
+                  to="/episodes"
+                >
+                  Episodes
+                </NavLink>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </nav>
     </div>
   );
